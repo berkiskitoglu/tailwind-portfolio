@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="fixed w-full z-20">
+      <nav class="bg-white border-gray-200 py-2.5">
+        <div class="flex flex-wrap items-center justify-between max-w-7xl px-4 mx-auto">
+          <!-- logo -->
+          <a href="" class="flex items-center">
+            <img src="img/logo.svg" alt="" class="h-6 mr-2" />
+            <span class="text-xl font-semibold">Portföy</span>
+          </a>
+
+          <!-- button & mobile -->
+          <div class="flex items-center lg:order-2">
+            <a href="#" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2">Başla</a>
+            <button data-collapse-toggle="menu" class="p-2 ml-1 text-sm text-gray-500 rounded-lg cursor-pointer lg:hidden">
+              <img src="img/hamburger.svg" class="h-6" alt="" />
+            </button>
+          </div>
+
+          <!-- menu -->
+          <div id="menu" class="w-full hidden lg:flex items-center justify-between lg:w-auto lg:order-1">
+            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8">
+              <li>
+                <a href="#" class="block py-2 px-3 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0">Ana Sayfa</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-700 border-b border-gray-100 rounded lg:bg-transparent lg:border-0 lg:p-0 lg:hover:text-purple-700">Hakkında</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-700 border-b border-gray-100 rounded lg:bg-transparent lg:border-0 lg:p-0 lg:hover:text-purple-700">Hizmetler</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-700 border-b border-gray-100 rounded lg:bg-transparent lg:border-0 lg:p-0 lg:hover:text-purple-700">Projeler</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-700 border-b border-gray-100 rounded lg:bg-transparent lg:border-0 lg:p-0 lg:hover:text-purple-700">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 pt-30 pb-10 lg:pt-20 lg:pb-0 grid lg:grid-cols-12 lg:p-20">
+        <!-- sol -->
+        <div class="lg:col-span-7 place-self-center">
+          <div class="text">
+            <h1 class="max-w-2xl mb-4 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">Merhaba, ben Jhon</h1>
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
+              Ben modern ve kullanıcı dostu web siteleri tasarlayan bir frontend geliştiricisiyim. Her projede sade, etkileyici ve işlevsel tasarımlar oluşturmayı hedefliyorum. Teknolojiyi estetikle
+              buluşturarak markalara dijital dünyada güçlü bir kimlik kazandırıyorum.
+            </p>
+          </div>
+
+          <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+            <a
+              href="#"
+              class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-purple-500 rounded-lg sm:w-fit hover:bg-gray-100 focus:ring-4 focus:ring-gray-100"
+            >
+              Github'da Görüntüle
+            </a>
+          </div>
+        </div>
+
+        <!-- sağ -->
+        <div class="hidden lg:flex lg:col-span-5 lg:mt-0">
+          <img src="img/profile.png" alt="Profil resmi" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 border-t border-gray-300">
+      <div class="max-w-7xl mx-auto px-7 py-15">
+        <div class="flex flex-wrap text-center gap-y-3">
+          <div class="w-[50%] lg:w-1/4 flex items-center justify-start">
+            <div class="bg-purple-300 text-white p-3 lg:p-4 border-3 lg:border-4 rounded-full border-purple-500">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                <path
+                  d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col items-start ms-2">
+              <span class="text-lg lg:text-xl font-bold">750</span>
+              <span class="text-sm lg:text-lg font-light">Tamamlanan Proje</span>
+            </div>
+          </div>
+
+          <div class="w-[50%] lg:w-1/4 flex items-center justify-start">
+            <div class="bg-purple-300 text-white p-3 lg:p-4 border-3 lg:border-4 rounded-full border-purple-500">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                <path
+                  d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col items-start ms-2">
+              <span class="text-lg lg:text-xl font-bold">70</span>
+              <span class="text-sm lg:text-lg font-light">Mutlu Müşteri</span>
+            </div>
+          </div>
+
+          <div class="w-[50%] lg:w-1/4 flex items-center justify-start">
+            <div class="bg-purple-300 text-white p-3 lg:p-4 border-3 lg:border-4 rounded-full border-purple-500">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                <path
+                  d="M440-240q-117 0-198.5-81.5T160-520v-240q0-33 23.5-56.5T240-840h500q58 0 99 41t41 99q0 58-41 99t-99 41h-20v40q0 117-81.5 198.5T440-240ZM240-640h400v-120H240v120Zm200 320q83 0 141.5-58.5T640-520v-40H240v40q0 83 58.5 141.5T440-320Zm280-320h20q25 0 42.5-17.5T800-700q0-25-17.5-42.5T740-760h-20v120ZM160-120v-80h640v80H160Zm280-440Z"
+                />
+              </svg>
+            </div>
+
+            <div class="flex flex-col items-start ms-2">
+              <span class="text-lg lg:text-xl font-bold">850</span>
+              <span class="text-sm lg:text-lg font-light">İçilmiş Kahve</span>
+            </div>
+          </div>
+
+          <div class="w-[50%] lg:w-1/4 flex items-center justify-start">
+            <div class="bg-purple-300 text-white p-3 lg:p-4 border-3 lg:border-4 rounded-full border-purple-500">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                <path
+                  d="M680-80v-120H560v-80h120v-120h80v120h120v80H760v120h-80Zm-480-80q-33 0-56.5-23.5T120-240v-480q0-33 23.5-56.5T200-800h40v-80h80v80h240v-80h80v80h40q33 0 56.5 23.5T760-720v244q-20-3-40-3t-40 3v-84H200v320h280q0 20 3 40t11 40H200Zm0-480h480v-80H200v80Zm0 0v-80 80Z"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col items-start ms-2">
+              <span class="text-lg lg:text-xl font-bold">20</span>
+              <span class="text-sm lg:text-lg font-light">Yıllık Deneyim</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-7 py-15 grid lg:grid-cols-5 space-x-5">
+        <div class="hidden lg:flex lg:col-span-2">
+          <img src="img/portrait.jpg" class="rounded-xl" alt="Portre fotoğrafı" />
+        </div>
+
+        <div class="lg:col-span-3 flex flex-col justify-center lg:m-start-3">
+          <h1 class="max-w-2xl mb-4 text-xl font-bold tracking-tight md:text-2xl xl:text-3xl">Merhaba, ben Jhon</h1>
+
+          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
+            Ben yaratıcı ve detay odaklı bir web geliştiricisiyim. Modern tasarımlar ve kullanıcı deneyimi odaklı projelerle markaların dijital dünyada güçlü bir yer edinmesine yardımcı oluyorum. Kod
+            yazmayı, öğrenmeyi ve yeni teknolojilerle projeler üretmeyi seviyorum.
+          </p>
+
+          <ul class="mt-4 md:px-0 px-2">
+            <li class="flex">
+              <span class="w-[130px]">İsim:</span>
+              <span class="text-gray-500">Jhon Doe</span>
+            </li>
+            <li class="flex">
+              <span class="w-[130px]">Doğum Tarihi:</span>
+              <span class="text-gray-500">01 Ocak 1999</span>
+            </li>
+            <li class="flex">
+              <span class="w-[130px]">Adres:</span>
+              <span class="text-gray-500">San Francisco, CA 97987, ABD</span>
+            </li>
+            <li class="flex">
+              <span class="w-[130px]">Posta Kodu:</span>
+              <span class="text-gray-500">41000</span>
+            </li>
+            <li class="flex">
+              <span class="w-[130px]">E-posta:</span>
+              <span class="text-gray-500">johndoe@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100">
+      <div class="max-w-6xl mx-auto px-7 py-15 text-center">
+        <h1 class="mb-4 text-xl font-bold tracking-tight md:text-2xl xl:text-3xl">Yetenekler</h1>
+        <p class="mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
+          Web geliştirme alanında çeşitli teknolojilerde deneyime sahibim. Her projede modern, verimli ve kullanıcı dostu çözümler üretmeyi hedefliyorum. Aşağıda uzmanlaştığım bazı teknolojileri
+          görebilirsiniz.
+        </p>
+
+        <div class="skills grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 my-10">
+          <div class="bg-white rounded-md p-10 shadow-md">
+            <div class="flex flex-col items-center gap-y-4">
+              <span class="font-semibold text-xl">CSS</span>
+              <div class="size-30 relative">
+                <svg class="size-full" viewBox="0 0 36 36">
+                  <circle cx="18" cy="18" fill="none" r="16" class="stroke-current text-gray-200" stroke-width="2"></circle>
+                  <circle cx="18" cy="18" fill="none" r="16" class="stroke-current text-purple-600" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="10" stroke-linecap="round"></circle>
+                </svg>
+                <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                  <span class="text-center text-xl font-semibold text-purple-600">90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between px-5 mt-3">
+              <div class="flex flex-col">
+                <span class="text-purple-500 font-semibold text-xl">28%</span>
+                <span class="text-gray-600 text-sm">Geçen Hafta</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-purple-500 font-semibold text-xl">60%</span>
+                <span class="text-gray-600 text-sm">Geçen Ay</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-md p-10 shadow-md">
+            <div class="flex flex-col items-center gap-y-4">
+              <span class="font-semibold text-xl">JavaScript</span>
+              <div class="size-30 relative">
+                <svg class="size-full" viewBox="0 0 36 36">
+                  <circle cx="18" cy="18" fill="none" r="16" class="stroke-current text-gray-200" stroke-width="2"></circle>
+                  <circle cx="18" cy="18" fill="none" r="16" class="stroke-current text-purple-600" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="20" stroke-linecap="round"></circle>
+                </svg>
+                <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                  <span class="text-center text-xl font-semibold text-purple-600">80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between px-5 mt-3">
+              <div class="flex flex-col">
+                <span class="text-purple-500 font-semibold text-xl">28%</span>
+                <span class="text-gray-600 text-sm">Geçen Hafta</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-purple-500 font-semibold text-xl">60%</span>
+                <span class="text-gray-600 text-sm">Geçen Ay</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-md p-10 shadow-md">
+            <div class="flex flex-col items-center gap-y-4">
+              <span class="font-semibold text-xl">React</span>
+              <div class="size-30 relative">
+                <svg class="size-full" viewBox="0 0 36 36">
+                  <circle cx="18" cy="18" fill="none" r="16" class="stroke-current text-gray-200" stroke-width="2"></circle>
+                  <circle cx="18" cy="18" fill="none" r="16" class="stroke-current text-purple-600" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="30" stroke-linecap="round"></circle>
+                </svg>
+                <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                  <span class="text-center text-xl font-semibold text-purple-600">70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between px-5 mt-3">
+              <div class="flex flex-col">
+                <span class="text-purple-500 font-semibold text-xl">28%</span>
+                <span class="text-gray-600 text-sm">Geçen Hafta</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-purple-500 font-semibold text-xl">60%</span>
+                <span class="text-gray-600 text-sm">Geçen Ay</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-md p-10 shadow-md">
+            <div class="flex flex-col items-center gap-y-4">
+              <span class="font-semibold text-xl">C#</span>
+              <div class="size-30 relative">
+                <svg class="size-full" viewBox="0 0 36 36">
+                  <circle cx="18" cy="18" fill="none" r="16" class="stroke-current text-gray-200" stroke-width="2"></circle>
+                  <circle cx="18" cy="18" fill="none" r="16" class="stroke-current text-purple-600" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="15" stroke-linecap="round"></circle>
+                </svg>
+                <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                  <span class="text-center text-xl font-semibold text-purple-600">85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between px-5 mt-3">
+              <div class="flex flex-col">
+                <span class="text-purple-500 font-semibold text-xl">28%</span>
+                <span class="text-gray-600 text-sm">Geçen Hafta</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-purple-500 font-semibold text-xl">60%</span>
+                <span class="text-gray-600 text-sm">Geçen Ay</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-md p-10 shadow-md">
+            <div class="flex flex-col items-center gap-y-4">
+              <span class="font-semibold text-xl">Laravel</span>
+              <div class="size-30 relative">
+                <svg class="size-full" viewBox="0 0 36 36">
+                  <circle cx="18" cy="18" fill="none" r="16" class="stroke-current text-gray-200" stroke-width="2"></circle>
+                  <circle cx="18" cy="18" fill="none" r="16" class="stroke-current text-purple-600" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="20" stroke-linecap="round"></circle>
+                </svg>
+                <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                  <span class="text-center text-xl font-semibold text-purple-600">80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between px-5 mt-3">
+              <div class="flex flex-col">
+                <span class="text-purple-500 font-semibold text-xl">28%</span>
+                <span class="text-gray-600 text-sm">Geçen Hafta</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-purple-500 font-semibold text-xl">60%</span>
+                <span class="text-gray-600 text-sm">Geçen Ay</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-md p-10 shadow-md">
+            <div class="flex flex-col items-center gap-y-4">
+              <span class="font-semibold text-xl">PHP</span>
+              <div class="size-30 relative">
+                <svg class="size-full" viewBox="0 0 36 36">
+                  <circle cx="18" cy="18" fill="none" r="16" class="stroke-current text-gray-200" stroke-width="2"></circle>
+                  <circle cx="18" cy="18" fill="none" r="16" class="stroke-current text-purple-600" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="50" stroke-linecap="round"></circle>
+                </svg>
+                <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                  <span class="text-center text-xl font-semibold text-purple-600">50%</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between px-5 mt-3">
+              <div class="flex flex-col">
+                <span class="text-purple-500 font-semibold text-xl">28%</span>
+                <span class="text-gray-600 text-sm">Geçen Hafta</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-purple-500 font-semibold text-xl">60%</span>
+                <span class="text-gray-600 text-sm">Geçen Ay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-5xl mx-auto px-7 py-15 text-center">
+        <h1 class="mb-4 text-xl font-bold tracking-tight md:text-2xl lg:text-3xl">Hizmetler</h1>
+        <p class="mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
+          Size sunduğum profesyonel hizmetlerle markanızı dijital dünyada öne çıkarın. Her adımda modern, yenilikçi ve etkili çözümler sunuyorum.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 space-y-10 lg:space-y-0 my-20">
+          <!-- Web Tasarımı -->
+          <div class="group bg-white hover:bg-purple-400 hover:text-white rounded-md p-5 shadow-lg relative transition duration-300">
+            <div
+              class="flex justify-center items-center size-15 bg-purple-300 group-hover:bg-white text-white p-3 lg:p-4 border lg:border-2 rounded-full border-purple-500 absolute -top-8 group-hover:translate-x-3 transition duration-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="size-6 text-purple-700 group-hover:text-purple-600" viewBox="0 0 24 24">
+                <path d="M3 4a1 1 0 0 1 1-1h5v2H5v14h4v2H4a1 1 0 0 1-1-1V4zm17 0a1 1 0 0 1 1 1v16h-6v-2h4V5h-4V3h5zM9 8h6v2H9V8zm0 4h6v2H9v-2zm0 4h6v2H9v-2z" />
+              </svg>
+            </div>
+            <div class="flex flex-col text-start space-y-5 pt-4">
+              <h3 class="font-semibold text-lg">Web Tasarımı</h3>
+              <p class="text-gray-500 group-hover:text-white">Modern, mobil uyumlu ve kullanıcı deneyimi odaklı web arayüzleri tasarlıyorum.</p>
+            </div>
+          </div>
+
+          <!-- Front-End Geliştirme -->
+          <div class="group bg-white hover:bg-purple-400 hover:text-white rounded-md p-5 shadow-lg relative transition duration-300">
+            <div
+              class="flex justify-center items-center size-15 bg-purple-300 group-hover:bg-white text-white p-3 lg:p-4 border lg:border-2 rounded-full border-purple-500 absolute -top-8 group-hover:translate-x-3 transition duration-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="size-6 text-purple-700 group-hover:text-purple-600" viewBox="0 0 24 24">
+                <path d="M3 3h18v18H3V3zm16 2H5v14h14V5zM7 8h2v8H7V8zm4 0h2v8h-2V8zm4 0h2v8h-2V8z" />
+              </svg>
+            </div>
+            <div class="flex flex-col text-start space-y-5 pt-4">
+              <h3 class="font-semibold text-lg">Front-End Geliştirme</h3>
+              <p class="text-gray-500 group-hover:text-white">HTML, CSS, JavaScript ve modern kütüphanelerle etkileşimli, hızlı web siteleri geliştiriyorum.</p>
+            </div>
+          </div>
+
+          <!-- Back-End Geliştirme -->
+          <div class="group bg-white hover:bg-purple-400 hover:text-white rounded-md p-5 shadow-lg relative transition duration-300">
+            <div
+              class="flex justify-center items-center size-15 bg-purple-300 group-hover:bg-white text-white p-3 lg:p-4 border lg:border-2 rounded-full border-purple-500 absolute -top-8 group-hover:translate-x-3 transition duration-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="size-6 text-purple-700 group-hover:text-purple-600" viewBox="0 0 24 24">
+                <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
+              </svg>
+            </div>
+            <div class="flex flex-col text-start space-y-5 pt-4">
+              <h3 class="font-semibold text-lg">Back-End Geliştirme</h3>
+              <p class="text-gray-500 group-hover:text-white">Güçlü, güvenli ve ölçeklenebilir sunucu tarafı uygulamaları oluşturuyorum.</p>
+            </div>
+          </div>
+
+          <!-- SEO ve Optimizasyon -->
+          <div class="group bg-white hover:bg-purple-400 hover:text-white rounded-md p-5 shadow-lg relative transition duration-300">
+            <div
+              class="flex justify-center items-center size-15 bg-purple-300 group-hover:bg-white text-white p-3 lg:p-4 border lg:border-2 rounded-full border-purple-500 absolute -top-8 group-hover:translate-x-3 transition duration-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="size-6 text-purple-700 group-hover:text-purple-600" viewBox="0 0 24 24">
+                <path d="M12 2a10 10 0 0 0 0 20 9.93 9.93 0 0 0 6.36-2.36l-1.42-1.42A8 8 0 1 1 20 12h-3l4 4 4-4h-3A10 10 0 0 0 12 2z" />
+              </svg>
+            </div>
+            <div class="flex flex-col text-start space-y-5 pt-4">
+              <h3 class="font-semibold text-lg">SEO ve Optimizasyon</h3>
+              <p class="text-gray-500 group-hover:text-white">Web sitenizin arama motorlarında üst sıralarda yer alması için etkili SEO stratejileri uyguluyorum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50">
+      <div class="max-w-4xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-12 mx-auto mb-3 fill-gray-600 rotate-180">
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path d="M18.62 18h-5.24l2-4H13V6h8v7.24L18.62 18zm-2-2h.76L19 12.76V8h-4v4h3.62l-2 4zm-8 2H3.38l2-4H3V6h8v7.24L8.62 18zm-2-2h.76L9 12.76V8H5v4h3.62l-2 4z" />
+          </svg>
+
+          <blockquote>
+            <p class="text-xl font-medium text-gray-900 md:text-2xl">
+              Gerçek profesyonellik; sadece işini iyi yapmak değil, aynı zamanda her projede fark yaratmaktır. İş birliğimiz sayesinde markamızın dijital kimliği güçlendi ve hedef kitlemizle daha
+              güçlü bağlar kurduk.
+            </p>
+          </blockquote>
+
+          <figcaption class="flex justify-center mt-6 space-x-3">
+            <img class="w-6 h-6 rounded-full" src="img/user.png" alt="Kullanıcı resmi" />
+            <div class="flex items-center divide-x-2 divide-gray-500">
+              <div class="pr-3 font-medium text-gray-900">Micheal Gough</div>
+              <div class="pl-3 text-sm font-light text-gray-500">Google CEO’su</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-7 py-15 text-center">
+        <h1 class="mb-4 text-xl font-bold tracking-tight md:text-2xl xl:text-3xl">Projeler</h1>
+        <p class="mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">Gerçekleştirdiğim projelerle markaların dijital dünyadaki varlığını güçlendiriyorum.</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <!-- Proje 1 -->
+          <div class="relative group">
+            <img class="h-auto max-w-full rounded-lg group-hover:brightness-50 duration-500" src="img/p1.jpg" alt="Web Tasarım Projesi" />
+            <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 duration-500">
+              <span class="text-3xl font-bold text-white">Proje 1</span>
+            </div>
+          </div>
+
+          <!-- Proje 2 -->
+          <div class="relative group">
+            <img class="h-auto max-w-full rounded-lg group-hover:brightness-50 duration-500" src="img/p2.jpg" alt="Kurumsal Site Tasarımı" />
+            <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 duration-500">
+              <span class="text-3xl font-bold text-white">Proje 2</span>
+            </div>
+          </div>
+
+          <!-- Proje 3 -->
+          <div class="relative group">
+            <img class="h-auto max-w-full rounded-lg group-hover:brightness-50 duration-500" src="img/p3.jpg" alt="Mobil Uyumlu Web Sitesi" />
+            <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 duration-500">
+              <span class="text-3xl font-bold text-white">Proje 3</span>
+            </div>
+          </div>
+
+          <!-- Proje 4 -->
+          <div class="relative group">
+            <img class="h-auto max-w-full rounded-lg group-hover:brightness-50 duration-500" src="img/p4.jpg" alt="E-Ticaret Platformu" />
+            <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 duration-500">
+              <span class="text-3xl font-bold text-white">Proje 4</span>
+            </div>
+          </div>
+
+          <!-- Proje 5 -->
+          <div class="relative group">
+            <img class="h-auto max-w-full rounded-lg group-hover:brightness-50 duration-500" src="img/p5.jpg" alt="Landing Page Tasarımı" />
+            <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 duration-500">
+              <span class="text-3xl font-bold text-white">Proje 5</span>
+            </div>
+          </div>
+
+          <!-- Proje 6 -->
+          <div class="relative group">
+            <img class="h-auto max-w-full rounded-lg group-hover:brightness-50 duration-500" src="img/p6.jpg" alt="Kişisel Blog Sitesi" />
+            <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 duration-500">
+              <span class="text-3xl font-bold text-white">Proje 6</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50">
+      <div class="max-w-7xl mx-auto px-7 py-15 text-center">
+        <h1 class="mb-4 text-xl font-bold tracking-tight md:text-2xl xl:text-3xl">İletişim</h1>
+        <p class="mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">Benimle iletişime geçmek veya iş birliği teklifinde bulunmak için formu doldurabilirsiniz.</p>
+
+        <div class="flex flex-col lg:flex-row gap-3 space-y-3 lg:space-y-0 lg:space-x-3">
+          <!-- Sol taraf: İletişim bilgileri -->
+          <div class="flex-1 lg:flex-1 lg:order-2">
+            <div class="bg-white flex flex-col justify-around p-3 h-full">
+              <!-- Adres -->
+              <div class="flex gap-2 items-start mb-5">
+                <div class="flex items-center justify-center bg-purple-600 p-2 border lg:border-2 rounded-full">
+                  <svg class="size-5 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                    <path
+                      d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col text-start">
+                  <span class="font-bold">Adres</span>
+                  <span class="text-sm font-light">İstanbul, Türkiye</span>
+                </div>
+              </div>
+
+              <!-- Telefon -->
+              <div class="flex gap-2 items-start mb-5">
+                <div class="flex items-center justify-center bg-purple-600 p-2 border lg:border-2 rounded-full">
+                  <svg class="size-5 fill-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+                    <path
+                      d="M520-520v-240h80v104l200-200 56 56-200 200h104v80H520Zm278 400q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col text-start">
+                  <span class="font-bold">Telefon</span>
+                  <span class="text-sm font-light">+90 555 555 55 55</span>
+                </div>
+              </div>
+
+              <!-- E-posta -->
+              <div class="flex gap-2 items-start mb-5">
+                <div class="flex items-center justify-center bg-purple-600 p-2 border lg:border-2 rounded-full">
+                  <svg class="size-5 fill-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+                    <path
+                      d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200Z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col text-start">
+                  <span class="font-bold">E-posta</span>
+                  <span class="text-sm font-light">ornekmail@gmail.com</span>
+                </div>
+              </div>
+
+              <!-- Web Sitesi -->
+              <div class="flex gap-2 items-start mb-5">
+                <div class="flex items-center justify-center bg-purple-600 p-2 border lg:border-2 rounded-full">
+                  <svg class="size-5 fill-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+                    <path
+                      d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col text-start">
+                  <span class="font-bold">Web Sitesi</span>
+                  <span class="text-sm font-light">www.orneksite.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sağ taraf: Form -->
+          <div class="flex-1 lg:flex-2 lg:order-1">
+            <form>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
+                <div>
+                  <input type="text" name="name" id="name" class="bg-white border border-gray-700 text-gray-900 text-sm w-full p-2.5 focus:outline-none" placeholder="Adınız" />
+                </div>
+                <div>
+                  <input type="email" name="email" id="email" class="bg-white border border-gray-700 text-gray-900 text-sm w-full p-2.5 focus:outline-none" placeholder="E-posta" />
+                </div>
+                <div class="sm:col-span-2">
+                  <input type="text" name="subject" id="subject" class="bg-white border border-gray-700 text-gray-900 text-sm w-full p-2.5 focus:outline-none" placeholder="Konu" />
+                </div>
+                <div class="sm:col-span-2">
+                  <textarea name="message" id="message" rows="6" class="bg-white border border-gray-700 text-gray-900 text-sm w-full p-2.5 focus:outline-none" placeholder="Mesajınız"></textarea>
+                </div>
+                <div class="sm:col-span-2">
+                  <button type="submit" class="block w-full px-5 py-3 text-sm border border-gray-700 hover:bg-purple-700 hover:text-white bg-white">Mesaj Gönder</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/3.1.2/flowbite.js"
+      integrity="sha512-c9m0HP/+jR+ZgMbKqLHtvn8nT0IiJiw0NhgSWedfZWi1QvGS39Kz2w4Sbo7rD1eYA+fm7ypCLNR0gbAJv2mHQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
